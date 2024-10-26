@@ -285,24 +285,67 @@ p {
     width: 300px;
     position: absolute;
     top: 20px;
-    display: none;
+    opacity: 0;
+    z-index: -1;
     padding: 50px 0px;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+.content1 li, .content2 li, .content3 li, .content4 li{
+    transition: all 0.3s ease;
+}
+.content1 li a:hover {
+    color: #e3ff04;
+}
+.content2 li a:hover {
+    color: #e3ff04;
+}
+.content3 li a:hover{
+    color: #e3ff04;
+}
+.content4 li a:hover{
+    color: #e3ff04;
+}
+
+.content1 li:hover{
+    transform: translateX(5px);
+    
+} 
+.content2 li:hover{
+    transform: translateX(5px);
+    color: #e3ff04;
+} 
+.content3 li:hover{
+    transform: translateX(5px);
+    color: #e3ff04;
+} 
+.content4 li:hover{
+    transform: translateX(5px);
+    color: #e3ff04;
 }
 
 .drop1:hover .div1 {
-    display: block;
+   opacity: 1;
+   z-index: 2;
+   transform: translateY(0px);
 }
 
 .drop2:hover .div2 {
-    display: block;
+    opacity: 1;
+   z-index: 2;
+   transform: translateY(0px);
 }
 
 .drop3:hover .div3 {
-    display: block;
+    opacity: 1;
+   z-index: 2;
+   transform: translateY(0px);
 }
 
 .drop4:hover .div4 {
-    display: block;
+    opacity: 1;
+   z-index: 2;
+   transform: translateY(0px);
 }
 
 
@@ -367,9 +410,6 @@ p {
     font-weight: 400;
 }
 
-.parrot a {
-    color: #e3ff04;
-}
 
 .full {
     margin-bottom: 50px;
